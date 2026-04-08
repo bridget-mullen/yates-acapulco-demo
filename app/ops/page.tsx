@@ -27,10 +27,19 @@ type Lead = {
 
 const ESTADOS = ['nuevo','preclasificado','contacto realizado','cotización enviada','seguimiento','cerrado ganado','cerrado perdido']
 
+const FALLBACK: Lead[] = [
+  { id:'L-201', nombre:'Andrea Lozano', whatsapp:'+52 55 2188 4411', email:'andrea@novagroup.mx', fecha:'2026-04-19', personas:'14', experiencia:'Corporativo VIP', duracion:'6h', presupuesto:'$90k-$130k', ocasion:'Cierre anual', idioma:'Español/English', preferencias:'DJ lounge + catering premium', urgencia:'Alta', canal:'WhatsApp', estado:'cotización enviada', score:88, origen:'Web Hero CTA', createdAt:'2026-04-07 13:10', notas:'Alta probabilidad', timeline:['Lead recibido','Preclasificado','Contacto 12 min','Cotización enviada']},
+  { id:'L-202', nombre:'Michael Reed', whatsapp:'+1 305 554 0022', email:'mreed@orionpartners.com', fecha:'2026-04-22', personas:'8', experiencia:'Experiencia romántica', duracion:'4h', presupuesto:'$55k-$80k', ocasion:'Aniversario', idioma:'English', preferencias:'Atardecer + champagne', urgencia:'Media', canal:'Email', estado:'contacto realizado', score:73, origen:'AI Concierge', createdAt:'2026-04-07 15:42', notas:'Necesita confirmación fecha', timeline:['Lead recibido','Preclasificado','Contacto realizado']}
+]
+
 function getLeads(): Lead[] {
-  if (typeof window === 'undefined') return []
+  if (typeof window === 'undefined') return FALLBACK
   const raw = localStorage.getItem('aurea_leads')
-  return raw ? JSON.parse(raw) : []
+  if (!raw) {
+    localStorage.setItem('aurea_leads', JSON.stringify(FALLBACK))
+    return FALLBACK
+  }
+  return JSON.parse(raw)
 }
 function saveLeads(leads: Lead[]) { localStorage.setItem('aurea_leads', JSON.stringify(leads)) }
 

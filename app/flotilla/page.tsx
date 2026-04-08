@@ -1,8 +1,8 @@
 const fleet = [
   { name: 'Velaris 42', cap: 'Hasta 10 personas', from: 'Desde $29,000 MXN', img: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1400&q=80' },
   { name: 'Noir 55', cap: 'Hasta 15 personas', from: 'Desde $52,000 MXN', img: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=1400&q=80' },
-  { name: 'Solenne 60', cap: 'Hasta 20 personas', from: 'Desde $68,000 MXN', img: 'https://images.unsplash.com/photo-1540946485063-a40da27545f8?auto=format&fit=crop&w=1400&q=80' },
-  { name: 'Astra 75', cap: 'Hasta 30 personas', from: 'Desde $110,000 MXN', img: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1400&q=80' }
+  { name: 'Solenne 60', cap: 'Hasta 20 personas', from: 'Desde $68,000 MXN', img: 'https://images.unsplash.com/photo-1562281302-809108fd533c?auto=format&fit=crop&w=1400&q=80' },
+  { name: 'Astra 75', cap: 'Hasta 30 personas', from: 'Desde $110,000 MXN', img: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1400&q=80' }
 ]
 
 export default function FleetPage() {

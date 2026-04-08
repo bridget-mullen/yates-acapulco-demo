@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body {
+  margin: 0;
+  background: #070b12;
+  color: #f3eee7;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+.lux-panel {
+  border: 1px solid rgba(213, 179, 121, 0.35);
+  background: linear-gradient(165deg, rgba(12,20,33,0.95), rgba(8,14,23,0.9));
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+
+.gold {
+  background: linear-gradient(120deg,#f6deb4 0%,#d9ad74 45%,#fff0d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

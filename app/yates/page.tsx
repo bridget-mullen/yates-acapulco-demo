@@ -12,7 +12,7 @@ const experiences = [
   {
     name: 'Celebración a bordo',
     copy: 'Cumpleaños, aniversarios y reuniones especiales producidas con detalle y estilo.',
-    image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1600&q=80'
+    image: '/celebracion-abordo.jpg'
   },
   {
     name: 'Experiencia romántica',

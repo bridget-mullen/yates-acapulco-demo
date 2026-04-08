@@ -32,21 +32,21 @@ type Lead = StepForm & {
 const heroSlides = [
   {
     image: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=2200&q=80',
-    eyebrow: 'Recepción digital premium',
-    title: 'Experiencias privadas que empiezan a cerrarse antes de zarpar.',
-    copy: 'Aurea Yachts combina presencia premium, intake inteligente y operación comercial ligera para convertir mejor cada lead de alto valor.'
+    eyebrow: 'Private Yacht Collection',
+    title: 'Charters privados diseñados para impresionar desde el primer contacto.',
+    copy: 'Experiencias náuticas curadas para huéspedes que buscan privacidad, servicio impecable y una atención que se siente verdaderamente premium.'
   },
   {
     image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2200&q=80',
-    eyebrow: 'Luxury charter system',
-    title: 'No es una web bonita. Es una recepción comercial de alto ticket.',
-    copy: 'Diseñada para filtrar mejor, responder más rápido y dar una experiencia impecable desde el primer contacto.'
+    eyebrow: 'Luxury Yachting',
+    title: 'Navegación privada con servicio curado, estilo impecable y lujo sin fricción.',
+    copy: 'Desde un sunset charter hasta una celebración a bordo, cada detalle se prepara con la precisión y el cuidado que espera un cliente de alto nivel.'
   },
   {
     image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=2200&q=80',
-    eyebrow: 'Hospitality + sales',
-    title: 'Lujo sin fricción para leads serios, atención humana para cerrar mejor.',
-    copy: 'Una demo pensada para marcas náuticas premium que quieren elevar su percepción y su operación sin meter software pesado.'
+    eyebrow: 'Private Hospitality',
+    title: 'Cada salida comienza con una conversación cuidada y termina en una experiencia a la altura de la ocasión.',
+    copy: 'Creamos propuestas a medida para parejas, grupos privados, celebraciones y experiencias corporativas con estándar premium.'
   }
 ]
 
@@ -86,7 +86,7 @@ const faqs = [
 
 const seedLeads: Lead[] = [
   { id:'L-201', nombre:'Andrea Lozano', whatsapp:'+52 55 2188 4411', email:'andrea@novagroup.mx', fecha:'2026-04-19', personas:'14', experiencia:'Corporativo VIP', duracion:'6h', presupuesto:'$90k-$130k', ocasion:'Cierre anual', idioma:'Español/English', preferencias:'DJ lounge + catering premium', urgencia:'Alta', canal:'WhatsApp', estado:'cotización enviada', score:88, origen:'Hero CTA', createdAt:'2026-04-07 13:10', notas:'Alta probabilidad', timeline:['Lead recibido','Preclasificado','Contacto 12 min','Cotización enviada'] },
-  { id:'L-202', nombre:'Michael Reed', whatsapp:'+1 305 554 0022', email:'mreed@orionpartners.com', fecha:'2026-04-22', personas:'8', experiencia:'Experiencia romántica', duracion:'4h', presupuesto:'$55k-$80k', ocasion:'Aniversario', idioma:'English', preferencias:'Atardecer + champagne', urgencia:'Media', canal:'Email', estado:'contacto realizado', score:73, origen:'AI Concierge', createdAt:'2026-04-07 15:42', notas:'Necesita confirmar fecha', timeline:['Lead recibido','Preclasificado','Contacto realizado'] }
+  { id:'L-202', nombre:'Michael Reed', whatsapp:'+1 305 554 0022', email:'mreed@orionpartners.com', fecha:'2026-04-22', personas:'8', experiencia:'Experiencia romántica', duracion:'4h', presupuesto:'$55k-$80k', ocasion:'Aniversario', idioma:'English', preferencias:'Atardecer + champagne', urgencia:'Media', canal:'Email', estado:'contacto realizado', score:73, origen:'Atención guiada', createdAt:'2026-04-07 15:42', notas:'Necesita confirmar fecha', timeline:['Lead recibido','Preclasificado','Contacto realizado'] }
 ]
 
 function loadLeads() {
@@ -170,7 +170,7 @@ export default function Page() {
             <h1 className="mt-4 max-w-4xl text-5xl font-black uppercase leading-[0.92] md:text-7xl">{slide.title}</h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#d9e1e5]">{slide.copy}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#cotizar" className="rounded-full bg-[#f0c98f] px-6 py-3 text-xs font-black uppercase tracking-[0.14em] text-[#1a1d21]">Solicitar experiencia</a>
+              <a href="#cotizar" className="rounded-full bg-[#f0c98f] px-6 py-3 text-xs font-black uppercase tracking-[0.14em] text-[#1a1d21]">Solicitar propuesta</a>
               <a href="https://wa.me/5215555555555" className="rounded-full border border-[#8ca2ad] bg-[#0f1924]/70 px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#dcebf1]">WhatsApp</a>
             </div>
           </div>
@@ -179,12 +179,12 @@ export default function Page() {
             <article className="lux-panel rounded-[28px] p-5 md:translate-y-8">
               <p className="text-[11px] uppercase tracking-[0.18em] text-[#94bcca]">Tiempo objetivo</p>
               <p className="mt-3 text-4xl font-black gold">12–20 min</p>
-              <p className="mt-3 text-sm leading-relaxed text-[#c7d1d7]">La recepción prioriza leads de mayor intención para reducir tiempos muertos y acelerar contacto útil.</p>
+              <p className="mt-3 text-sm leading-relaxed text-[#c7d1d7]">Un proceso cuidado, discreto y eficiente para responder con la velocidad que exige una experiencia premium.</p>
             </article>
             <article className="lux-panel rounded-[28px] p-5">
-              <p className="text-[11px] uppercase tracking-[0.18em] text-[#94bcca]">Operación ligera</p>
-              <p className="mt-3 text-lg font-semibold">Captación + preclasificación + siguiente acción sugerida</p>
-              <p className="mt-3 text-sm leading-relaxed text-[#c7d1d7]">Una experiencia suave para el cliente con orden real para el equipo comercial.</p>
+              <p className="text-[11px] uppercase tracking-[0.18em] text-[#94bcca]">Atención curada</p>
+              <p className="mt-3 text-lg font-semibold">Hospitality, claridad y servicio desde el primer contacto</p>
+              <p className="mt-3 text-sm leading-relaxed text-[#c7d1d7]">Todo está pensado para que reservar se sienta tan premium como la experiencia misma.</p>
             </article>
           </div>
         </div>
@@ -194,9 +194,9 @@ export default function Page() {
         <div className="grid gap-8 md:grid-cols-[.9fr_1.1fr] md:items-end">
           <div>
             <p className="text-[11px] uppercase tracking-[0.24em] text-[#98c4d5]">Experiencias curadas</p>
-            <h2 className="mt-3 text-4xl font-black uppercase leading-[0.95]">No mostramos opciones al por mayor. Curamos la correcta.</h2>
+            <h2 className="mt-3 text-4xl font-black uppercase leading-[0.95]">Experiencias pensadas para huéspedes que esperan más que un paseo.</h2>
           </div>
-          <p className="max-w-2xl text-sm leading-relaxed text-[#c7d1d7]">Cada experiencia está diseñada para vender exclusividad, claridad y facilidad. El objetivo no es listar barcos como marketplace, sino facilitar una decisión premium.</p>
+          <p className="max-w-2xl text-sm leading-relaxed text-[#c7d1d7]">Seleccionamos el formato ideal según el tipo de ocasión, el número de invitados y el nivel de servicio esperado. Todo se presenta con claridad, sin fricción y con criterio de hospitality.</p>
         </div>
 
         <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -215,8 +215,8 @@ export default function Page() {
           <div className="grid gap-8 md:grid-cols-[.85fr_1.15fr]">
             <div>
               <p className="text-[11px] uppercase tracking-[0.22em] text-[#a0c3d1]">Fleet preview</p>
-              <h2 className="mt-3 text-4xl font-black uppercase leading-[0.95]">Una muestra premium y creíble.</h2>
-              <p className="mt-4 text-sm leading-relaxed text-[#c5d0d8]">Las embarcaciones funcionan como categorías comerciales: ayudan a orientar, filtrar presupuesto y llevar al lead correcto a una propuesta curada.</p>
+              <h2 className="mt-3 text-4xl font-black uppercase leading-[0.95]">Embarcaciones seleccionadas</h2>
+              <p className="mt-4 text-sm leading-relaxed text-[#c5d0d8]">Una selección sobria para comunicar estilo, capacidad y nivel de experiencia. La intención no es saturar con opciones, sino mostrar una oferta clara, elegante y aspiracional.</p>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               {fleet.map((item) => (
@@ -247,8 +247,8 @@ export default function Page() {
       <section className="mx-auto max-w-7xl px-6 pb-16">
         <div className="grid gap-4 md:grid-cols-[.8fr_1.2fr]">
           <div>
-            <p className="text-[11px] uppercase tracking-[0.22em] text-[#98c4d5]">Trust layer</p>
-            <h2 className="mt-3 text-4xl font-black uppercase leading-[0.95]">La confianza se diseña desde el primer minuto.</h2>
+            <p className="text-[11px] uppercase tracking-[0.22em] text-[#98c4d5]">Diferenciales</p>
+            <h2 className="mt-3 text-4xl font-black uppercase leading-[0.95]">Confianza, servicio y discreción en cada contacto.</h2>
           </div>
           <div className="grid gap-3 md:grid-cols-2">
             {trustPoints.map((item) => (
@@ -263,9 +263,9 @@ export default function Page() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="text-[11px] uppercase tracking-[0.22em] text-[#a4c8d6]">Multi-step inquiry</p>
-              <h2 className="mt-2 text-4xl font-black uppercase leading-[0.95]">Cotización inteligente con trato de concierge.</h2>
+              <h2 className="mt-2 text-4xl font-black uppercase leading-[0.95]">Solicita una experiencia a medida</h2>
             </div>
-            <p className="max-w-xl text-sm leading-relaxed text-[#c5d0d7]">El flujo guía, precalifica y alimenta la recepción operativa con datos accionables. Rápido para el cliente, útil para ventas.</p>
+            <p className="max-w-xl text-sm leading-relaxed text-[#c5d0d7]">Compártenos fecha, grupo y preferencias. Nuestro equipo te contactará con una propuesta curada según el tipo de salida que buscas.</p>
           </div>
 
           <div className="mt-6 h-2 w-full rounded-full bg-[#162334]"><div className="h-2 rounded-full bg-[#e1b578] transition-all" style={{ width: `${done ? 100 : progress}%` }} /></div>
@@ -314,7 +314,7 @@ export default function Page() {
           ) : (
             <div className="mt-8 rounded-[26px] border border-[#304859] bg-[#0f1824] p-6">
               <p className="text-2xl font-semibold">Hemos recibido tu solicitud.</p>
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#c7d1d7]">Nuestro tiempo objetivo de respuesta es de 12 a 20 minutos en horario operativo. Si quieres acelerar el contacto, puedes abrir WhatsApp ahora.</p>
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#c7d1d7]">En breve recibirás atención personalizada para definir disponibilidad, embarcación recomendada y siguientes pasos.</p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <a href="https://wa.me/5215555555555" className="rounded-full bg-[#f0c98f] px-5 py-3 text-xs font-black uppercase tracking-[0.14em] text-[#1a1d21]">Abrir WhatsApp</a>
                 <a href="#experiencias" className="rounded-full border border-[#556b7b] px-5 py-3 text-xs font-bold uppercase tracking-[0.14em]">Explorar experiencias</a>
@@ -338,9 +338,9 @@ export default function Page() {
             </div>
           </div>
           <div className="rounded-[30px] border border-[#c6a46f]/25 bg-[#0b1118] p-6">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-[#98c4d5]">AI Concierge</p>
-            <h3 className="mt-3 text-3xl font-black uppercase leading-[0.95]">Asistencia inteligente, sin vender humo.</h3>
-            <p className="mt-4 text-sm leading-relaxed text-[#cdd6dc]">Funciona como extensión del equipo comercial: orienta, precalifica y reduce fricción antes del contacto humano.</p>
+            <p className="text-[11px] uppercase tracking-[0.22em] text-[#98c4d5]">Atención guiada</p>
+            <h3 className="mt-3 text-3xl font-black uppercase leading-[0.95]">Una guía inicial pensada para acelerar tu atención.</h3>
+            <p className="mt-4 text-sm leading-relaxed text-[#cdd6dc]">Si ya tienes una idea de experiencia, podemos orientarte desde el primer mensaje para que el equipo llegue a la conversación con contexto claro.</p>
             <button onClick={() => setConciergeOpen(!conciergeOpen)} className="mt-5 rounded-full bg-[#f0c98f] px-5 py-3 text-xs font-black uppercase tracking-[0.14em] text-[#1a1d21]">Abrir concierge</button>
           </div>
         </div>
@@ -348,8 +348,8 @@ export default function Page() {
 
       {conciergeOpen && (
         <div className="fixed bottom-5 right-5 z-50 w-[330px] rounded-[24px] border border-[#c7a671]/28 bg-[#0f1722] p-4 shadow-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.08em]">Aurea Concierge</p>
-          <p className="mt-2 text-sm leading-relaxed text-[#ccd6dd]">Puedo ayudarte a perfilar la experiencia adecuada y acelerar tu propuesta inicial.</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.08em]">Concierge Aurea</p>
+          <p className="mt-2 text-sm leading-relaxed text-[#ccd6dd]">Cuéntanos qué tipo de salida tienes en mente y te orientamos antes de pasar con el equipo.</p>
           <div className="mt-4 space-y-2">
             <button className="w-full rounded-2xl bg-[#162232] p-3 text-left text-sm">Quiero sunset charter</button>
             <button className="w-full rounded-2xl bg-[#162232] p-3 text-left text-sm">Busco corporativo VIP</button>

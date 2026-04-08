@@ -2,7 +2,7 @@ const experiences = [
   {
     name: 'Sunset Charter',
     copy: 'Una salida privada pensada para atardeceres largos, música, bebidas y una energía elegante.',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80'
+    image: '/sunset-charter.jpg'
   },
   {
     name: 'Day Charter Privado',

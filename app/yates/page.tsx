@@ -7,7 +7,7 @@ const experiences = [
   {
     name: 'Day Charter Privado',
     copy: 'Ideal para grupos que quieren navegar con amplitud, confort y un servicio de hospitalidad premium.',
-    image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80'
+    image: '/day-charter.jpg'
   },
   {
     name: 'Celebración a bordo',

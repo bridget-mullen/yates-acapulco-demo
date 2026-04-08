@@ -21,10 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="text-lg font-black uppercase tracking-[0.22em] text-[#173042]">Aurea</Link>
             <nav className="hidden items-center gap-6 text-[11px] font-bold uppercase tracking-[0.14em] text-[#36556a] md:flex">
               <Link href="/">Inicio</Link>
-              <Link href="/yates">Yates</Link>
-              <Link href="/flotilla">Flotilla</Link>
+              <Link href="/yates">Experiencias</Link>
+              <Link href="/flotilla">Yates</Link>
               <Link href="/reservaciones">Reservaciones</Link>
-              <Link href="/ops">Ops</Link>
             </nav>
           </div>
         </header>

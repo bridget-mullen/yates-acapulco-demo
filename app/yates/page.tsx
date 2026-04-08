@@ -17,7 +17,7 @@ const experiences = [
   {
     name: 'Experiencia romántica',
     copy: 'Una salida íntima con ritmo, timing y servicio diseñado alrededor del momento.',
-    image: 'https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1600&q=80'
+    image: '/experiencia-romantica.jpg'
   }
 ]
 
